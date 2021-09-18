@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 16 16:17:20 CEST 2021
+entando7-misc-inspinia-6.4.0.0-SNAPSHOT.pom>=
+entando7-misc-inspinia-6.4.0.0-SNAPSHOT.war>=
+entando7-misc-inspinia-6.4.0.0-SNAPSHOT-sources.jar>=
+entando7-misc-inspinia-6.4.0.0-SNAPSHOT-tests.jar>=

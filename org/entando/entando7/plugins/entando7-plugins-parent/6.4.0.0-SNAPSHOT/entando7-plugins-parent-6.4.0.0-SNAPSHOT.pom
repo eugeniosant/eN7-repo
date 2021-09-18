@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.entando.components</groupId>
+        <artifactId>entando7-components</artifactId>
+        <version>6.4.0.0-SNAPSHOT</version>
+    </parent>
+    <groupId>org.entando.entando7.plugins</groupId>
+    <artifactId>entando7-plugins-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>eN7: Plugins</name>
+    <description>Plugins parent for eN7: an agile, modern and user-centric open source Portal platform.</description>
+    <url>http://www.entando.com/</url>
+    <licenses>
+        <license>
+            <name>MIT LICENSE</name>
+            <url>http://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <organization>
+        <name>Entando Inc.</name>
+        <url>http://www.entando.com/</url>
+    </organization>
+    <modules>
+        <module>lib</module>
+        <module>engine</module>
+        <module>redis-client</module>
+        <module>portal-console</module>
+        <module>portal-ui</module>
+    </modules>
+    <profiles>
+        <profile>
+            <id>java8</id>
+            <activation>
+                <jdk>[1.8,)</jdk>
+            </activation>
+            <properties>
+                <javadoc.opts>-Xdoclint:none</javadoc.opts>
+            </properties>
+        </profile>
+    </profiles>
+    <properties>
+        <!--
+        <test.database.driver>org.postgresql.Driver</test.database.driver>
+        <test.database.hostname>localhost</test.database.hostname>
+        <test.database.port>5432</test.database.port>
+        <test.database.username>agile</test.database.username>
+        <test.database.password>agile</test.database.password>
+        <test.database.port.url>jdbc:postgresql://${test.database.hostname}:${test.database.port}/${project.artifactId}testPort</test.database.port.url>
+        <test.database.serv.url>jdbc:postgresql://${test.database.hostname}:${test.database.port}/${project.artifactId}testServ</test.database.serv.url>
+        -->
+        <!--
+        <test.database.driver>com.mysql.jdbc.Driver</test.database.driver>
+        <test.database.hostname>localhost</test.database.hostname>
+        <test.database.port>3306</test.database.port>
+        <test.database.username>root</test.database.username>
+        <test.database.password>agile</test.database.password>
+        <test.database.port.url>jdbc:mysql://${test.database.hostname}:${test.database.port}/EntandoCoreEnginetestPort</test.database.port.url>
+        <test.database.serv.url>jdbc:mysql://${test.database.hostname}:${test.database.port}/EntandoCoreEnginetestServ</test.database.serv.url>
+        -->
+        
+        <test.database.driver>org.apache.derby.jdbc.EmbeddedDriver</test.database.driver>
+        <test.database.hostname>localhost</test.database.hostname>
+        <test.database.port>1527</test.database.port>
+        <test.database.username>agile</test.database.username>
+        <test.database.password>agile</test.database.password>
+        <test.database.port.url>jdbc:derby:${project.build.directory}/test/db/${project.artifactId}testPort;create=true</test.database.port.url>
+        <test.database.serv.url>jdbc:derby:${project.build.directory}/test/db/${project.artifactId}testServ;create=true</test.database.serv.url>
+        
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        
+        <extensions>
+            <extension>
+                <groupId>kr.motd.maven</groupId>
+                <artifactId>os-maven-plugin</artifactId>
+                <version>1.6.2</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <groupId>org.xolstice.maven.plugins</groupId>
+                <artifactId>protobuf-maven-plugin</artifactId>
+                <version>0.6.1</version>
+                <configuration>
+                    <protocArtifact>com.google.protobuf:protoc:3.13.0:exe:${os.detected.classifier}</protocArtifact>
+                    <pluginId>grpc-java</pluginId>
+                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.34.1:exe:${os.detected.classifier}</pluginArtifact>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>compile-custom</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        
+        <!-- ***** gRPC ***** -->
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+        <!-- necessary for Java 9+ 
+        <dependency> 
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>annotations-api</artifactId>
+            <version>6.0.53</version>
+            <scope>provided</scope>
+        </dependency>
+        -->
+        <!-- *** TEST - start *** -->
+        
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>${hamcrest-all.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj-core.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.driver.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>${commons-dbcp2.version}</version>
+            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>${derby.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbyclient</artifactId>
+            <version>${derby.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-testing</artifactId>
+            <version>${grpc.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- *** TEST - end *** -->
+        
+    </dependencies>
+    
+</project>

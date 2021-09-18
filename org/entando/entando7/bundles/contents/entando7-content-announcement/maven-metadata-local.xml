@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.entando.entando7.bundles.contents</groupId>
+  <artifactId>entando7-content-announcement</artifactId>
+  <versioning>
+    <versions>
+      <version>6.4.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20210916141822</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.entando.entando7.bundles.widgets</groupId>
+  <artifactId>entando7-widget-navigation_bar</artifactId>
+  <versioning>
+    <versions>
+      <version>6.4.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20210916141744</lastUpdated>
+  </versioning>
+</metadata>
