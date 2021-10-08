@@ -102,7 +102,7 @@
             <artifactId>entando-plugin-jacms</artifactId>
             <type>jar</type>
             <classifier>classes</classifier>
-            <version>6.4.16</version>
+            <version>6.4.22</version>
             <scope>compile</scope>
         </dependency>
         
