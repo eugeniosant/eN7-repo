@@ -4,8 +4,8 @@
   <artifactId>entando7-misc-less</artifactId>
   <versioning>
     <versions>
-      <version>6.4.0.0-SNAPSHOT</version>
+      <version>7.0.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210916141710</lastUpdated>
+    <lastUpdated>20220311180257</lastUpdated>
   </versioning>
 </metadata>

@@ -4,8 +4,8 @@
   <artifactId>entando7-portal-lib</artifactId>
   <versioning>
     <versions>
-      <version>6.4.0.0-SNAPSHOT</version>
+      <version>7.0.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210916141249</lastUpdated>
+    <lastUpdated>20220311170953</lastUpdated>
   </versioning>
 </metadata>

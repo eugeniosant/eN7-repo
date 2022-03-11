@@ -4,8 +4,8 @@
   <artifactId>entando7-portal-ui</artifactId>
   <versioning>
     <versions>
-      <version>6.4.0.0-SNAPSHOT</version>
+      <version>7.0.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210916141415</lastUpdated>
+    <lastUpdated>20220311171121</lastUpdated>
   </versioning>
 </metadata>

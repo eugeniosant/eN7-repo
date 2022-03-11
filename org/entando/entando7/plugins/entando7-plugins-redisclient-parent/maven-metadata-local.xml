@@ -4,8 +4,8 @@
   <artifactId>entando7-plugins-redisclient-parent</artifactId>
   <versioning>
     <versions>
-      <version>6.4.0.0-SNAPSHOT</version>
+      <version>7.0.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210916141540</lastUpdated>
+    <lastUpdated>20220311180111</lastUpdated>
   </versioning>
 </metadata>

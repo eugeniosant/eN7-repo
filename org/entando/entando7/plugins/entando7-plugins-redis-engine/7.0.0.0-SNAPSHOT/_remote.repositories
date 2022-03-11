@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 19:01:08 CET 2022
+entando7-plugins-redis-engine-7.0.0.0-SNAPSHOT-tests.jar>=
+entando7-plugins-redis-engine-7.0.0.0-SNAPSHOT-sources.jar>=
+entando7-plugins-redis-engine-7.0.0.0-SNAPSHOT.jar>=
+entando7-plugins-redis-engine-7.0.0.0-SNAPSHOT.pom>=

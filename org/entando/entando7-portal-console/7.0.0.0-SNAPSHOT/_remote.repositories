@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 11 18:11:05 CET 2022
+entando7-portal-console-7.0.0.0-SNAPSHOT.pom>=
+entando7-portal-console-7.0.0.0-SNAPSHOT.jar>=
+entando7-portal-console-7.0.0.0-SNAPSHOT-javadoc.jar>=
+entando7-portal-console-7.0.0.0-SNAPSHOT-sources.jar>=
+entando7-portal-console-7.0.0.0-SNAPSHOT.war>=
+entando7-portal-console-7.0.0.0-SNAPSHOT-tests.jar>=

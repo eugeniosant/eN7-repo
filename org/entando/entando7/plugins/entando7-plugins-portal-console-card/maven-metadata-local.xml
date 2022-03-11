@@ -4,8 +4,8 @@
   <artifactId>entando7-plugins-portal-console-card</artifactId>
   <versioning>
     <versions>
-      <version>6.4.0.0-SNAPSHOT</version>
+      <version>7.0.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210916141613</lastUpdated>
+    <lastUpdated>20220311180149</lastUpdated>
   </versioning>
 </metadata>

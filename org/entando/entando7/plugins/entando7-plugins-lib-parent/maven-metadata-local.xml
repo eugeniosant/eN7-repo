@@ -4,8 +4,8 @@
   <artifactId>entando7-plugins-lib-parent</artifactId>
   <versioning>
     <versions>
-      <version>6.4.0.0-SNAPSHOT</version>
+      <version>7.0.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210916141448</lastUpdated>
+    <lastUpdated>20220311175955</lastUpdated>
   </versioning>
 </metadata>
