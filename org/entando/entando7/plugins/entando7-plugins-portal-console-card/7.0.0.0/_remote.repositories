@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Mar 28 11:29:36 CEST 2022
+entando7-plugins-portal-console-card-7.0.0.0.jar>=
+entando7-plugins-portal-console-card-7.0.0.0.pom>=
+entando7-plugins-portal-console-card-7.0.0.0-tests.jar>=
+entando7-plugins-portal-console-card-7.0.0.0.war>=
+entando7-plugins-portal-console-card-7.0.0.0-sources.jar>=

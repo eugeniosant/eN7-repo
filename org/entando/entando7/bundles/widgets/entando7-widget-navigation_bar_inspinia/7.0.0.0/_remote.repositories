@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Mar 28 11:30:57 CEST 2022
+entando7-widget-navigation_bar_inspinia-7.0.0.0-sources.jar>=
+entando7-widget-navigation_bar_inspinia-7.0.0.0.pom>=
+entando7-widget-navigation_bar_inspinia-7.0.0.0.war>=
+entando7-widget-navigation_bar_inspinia-7.0.0.0-tests.jar>=

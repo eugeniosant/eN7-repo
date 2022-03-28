@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Mar 28 11:28:12 CEST 2022
+entando7-plugins-engine-card-7.0.0.0.pom>=
+entando7-plugins-engine-card-7.0.0.0-sources.jar>=
+entando7-plugins-engine-card-7.0.0.0.jar>=
+entando7-plugins-engine-card-7.0.0.0-tests.jar>=
