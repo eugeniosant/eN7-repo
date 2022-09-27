@@ -1,6 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Mon Mar 28 11:32:45 CEST 2022
-entando7-de-app-integration-7.0.0.0-sources.jar>=
-entando7-de-app-integration-7.0.0.0-tests.jar>=
-entando7-de-app-integration-7.0.0.0.pom>=
-entando7-de-app-integration-7.0.0.0.jar>=
+#Tue Sep 27 11:27:52 CEST 2022
+entando7-de-app-integration-7.0.0.0.pom>e7=
+entando7-de-app-integration-7.0.0.0.jar>e7=

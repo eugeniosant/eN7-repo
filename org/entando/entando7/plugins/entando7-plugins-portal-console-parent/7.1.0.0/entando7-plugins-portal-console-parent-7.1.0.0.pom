@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.entando.entando7.plugins</groupId>
+        <artifactId>entando7-plugins-parent</artifactId>
+        <version>7.1.0.0</version>
+    </parent>
+    <groupId>org.entando.entando7.plugins</groupId>
+    <artifactId>entando7-plugins-portal-console-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>eN7: Plugins Portal Console</name>
+    <description>Plugins Portal Console parent for eN7: an agile, modern and user-centric open source Portal platform.</description>
+    <url>http://www.entando.com/</url>
+    <licenses>
+        <license>
+            <name>MIT LICENSE</name>
+            <url>http://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <organization>
+        <name>Entando Inc.</name>
+        <url>http://www.entando.com/</url>
+    </organization>
+    <modules>
+        <module>card</module>
+        <module>cms</module>
+    </modules>
+    
+    <dependencies>
+        
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-portal-console</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-portal-console</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- *** TEST *** -->
+        
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-ms-engine</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-core-engine</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-core-engine</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-portal-engine</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-portal-engine</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-portal-console</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        
+    </dependencies>
+    
+</project>

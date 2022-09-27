@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 27 14:32:39 CEST 2022
+entando7-core-engine-lib-7.1.0.0-sources.jar>=
+entando7-core-engine-lib-7.1.0.0.pom>=
+entando7-core-engine-lib-7.1.0.0-tests.jar>=
+entando7-core-engine-lib-7.1.0.0.jar>=
+entando7-core-engine-lib-7.1.0.0-javadoc.jar>=
