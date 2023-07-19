@@ -443,6 +443,14 @@
             <scope>compile</scope>
         </dependency>
         -->
+        
+        <!-- OWASP -->
+        <dependency>
+            <groupId>org.owasp.encoder</groupId>
+            <artifactId>encoder</artifactId>
+            <version>${encoder.version}</version>
+        </dependency>
+        
         <!-- *** Test *** -->
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>

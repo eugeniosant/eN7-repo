@@ -26,6 +26,7 @@
     <modules>
         <module>card</module>
         <module>cms</module>
+        <module>cds</module>
         <module>redis</module>
         <module>keyclock</module>
     </modules>
